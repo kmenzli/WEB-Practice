@@ -5,6 +5,12 @@ pipeline {
 }
    
     stages {
+        stage('Prerequis'){
+            steps {
+            echo 'prerequis the container...'
+            sh 'docker -version'
+            }
+        }
         stage('Create web directory')
         {
             input {
