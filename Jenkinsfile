@@ -1,7 +1,5 @@
 pipeline {
-    agent {
-  dockerContainer 'node:lts-buster-slim'
-}
+    agent any
     tools {
   dockerTool 'docker'
 }
